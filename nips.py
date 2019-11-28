@@ -17,5 +17,5 @@ def find_by_re(url, pattern, out_file = "out.md"):
             fa_res = fa.find_all(class_='author')
             for iter in fa_res:
                 f.write(iter.text + '; ')
-            f.write('\n[url](%s%s)\n' % (nips_base, it['href']))
+            f.write('\n> [url](%s%s)\n\n' % (nips_base, it['href']))
 
